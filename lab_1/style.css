@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+input[type="text"] {
+  width: 60%;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: border 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #007bff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction:column ;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #afacac;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: left;
+  vertical-align: top;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+#pokemon-list li {
+  margin-right: 10px;
+  display: flex;
+}
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: #74FA4A;
+  font-size: 17px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  opacity: 0.5;
+
+}
+
+.delete-button:hover {
+  color: #5AC1ED;
+  opacity: 3;
+}
+
+.delete-button:focus {
+  outline: none;
+}
